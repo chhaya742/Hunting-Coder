@@ -24,45 +24,28 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className={styles.mainnav}>
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link href="/contect">Contect</Link>
-          </li>
-        </ul>
-
-      </nav >
       <main className={styles.main}>
         <h1> <span className='mySpan'>Hunting Coders</span></h1>
-        <div className="myImg"><Image className={styles.myImg} src="/home.png" alt="" width={237} height={158} /></div>
+        <div className="myImg">
+        <img className={styles.myImg} src="/home.png" alt="" width={237} height={158} />
+        </div>
 
         <p className={styles.description}>
           A blog for hunting coders by a coder
         </p>
-        <div className="blogs">
+        <div>
           <h2>Popular Blogs</h2>
-          <div className="blog">
+          <div className={styles.blogItem}>
             <h3>How to learn javascript in 2022</h3>
             <p > Javascript the language used to design logic for web</p>
           </div>
-        </div>
-        <div className="blogs">
-          <div className="blog">
+
+          <div className={styles.blogItem}>
             <h3>How to learn javascript in 2022</h3>
             <p > Javascript the language used to design logic for web</p>
           </div>
-        </div>
-        <div className="blogs">
-          <div className="blog">
+
+          <div className={styles.blogItem}>
             <h3>How to learn javascript in 2022</h3>
             <p > Javascript the language used to design logic for web</p>
           </div>

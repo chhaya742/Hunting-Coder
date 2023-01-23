@@ -1,3 +1,7 @@
+.container{
+padding: 0 2rem;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -289,4 +293,8 @@
 .myImg{
   border-radius: 18px;
 margin-top: 21px;
+}
+
+.blogItem h3{
+  padding: 8px 0px 8px 0;
 }
