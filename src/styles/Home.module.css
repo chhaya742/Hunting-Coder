@@ -298,3 +298,11 @@ margin-top: 21px;
 .blogItem h3{
   padding: 8px 0px 8px 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .mainnav ul li {
+    margin: 0 6px;
+    font-weight: bold;
+    list-style: none;
+  }
+}

@@ -4,6 +4,9 @@ import styles from '../../styles/blogPost.module.css'
 import { useRouter } from 'next/router'
 import * as fs from 'fs'
 const Slug = (props) => {
+  function createMarkup(c) {
+    return {__html: c};
+  }
   const [blog, setblog] = useState(props.myBlog)
   // console.log("props", props.myBlog);
   return (
@@ -11,7 +14,7 @@ const Slug = (props) => {
       <main className={styles.main}>
         <h1>{blog && blog.title}</h1>
         <hr />
-        <div style={{ fontSize: "larger" }}>{blog && blog.content}</div>
+        {blog && <div style={{ fontSize: "larger" }} dangerouslySetInnerHTML={createMarkup(blog.content)} ></div>}
       </main>
     </div>
   )

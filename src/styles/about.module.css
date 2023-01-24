@@ -3,34 +3,24 @@
     max-width: 45vw;
     }
 
+
 .main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     padding: 2rem;
     min-height: 100vh;
-    font-size: large;
-  }
-
-  .blogItem h3{
-    padding: 16px 0px 14px 0;
 
   }
-
   .main h2{
-    padding: 15px;
+    padding:10px 0px 10px 0
+  }
+  .main h1{
+    text-align: center;
   }
 
-  .button{
-    color: white;
-    background-color: rgb(59, 54, 54);
-    border-radius: 6px;
-    box-shadow: aqua;
-    /* width: 66px; */
-    height: 25px;
-    padding: 0px 2px 0 2px;
-    margin-top: 5px;
+  .main ul{
+    padding: 18px;
   }
 
   @media only screen and (max-width: 600px) {

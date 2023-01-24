@@ -2,5 +2,6 @@
     "title":"How to learn python",
     "content":"Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming. Wikipedia Designed by: Guido van Rossum First appeared: 20 February 1991; 31 years ago OS: Windows, macOS, Linux/UNIX, Android and more Filename extensions: .py,.pyi,.pyc,.pyd,.pyw,.pyz (since 3.5),.pyo (prior to 3.5) Paradigm: Multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective",
     "auther":"harry",
+    "metadesc":"Learn python in few mintus I will teach you python in few days Learn javascript in few mintus I will teach you js in few days Learn javascript in few mintus I will teach you js in few days",
     "slug":"how-to-learn-python"
 }

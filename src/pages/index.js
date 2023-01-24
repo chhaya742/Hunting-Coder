@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import Script from 'next/script'
-import Link from 'next/link'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,7 +25,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1> <span className='mySpan'>Hunting Coders</span></h1>
         <div className="myImg">
-        <img className={styles.myImg} src="/home.png" alt="" width={237} height={158} />
+          <img className={styles.myImg} src="/home.png" alt="" width={237} height={158} />
         </div>
 
         <p className={styles.description}>
