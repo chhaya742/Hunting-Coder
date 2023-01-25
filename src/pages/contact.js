@@ -10,12 +10,10 @@ const Contact = () => {
   }
   const handleSubmit = async () => {
     const response = await axios.post("http://localhost:3000/api/postcontact", user)
-    console.log(response.status);
     if (response.status == 200) {
       alert(response.data.message)
     }
   }
-  console.log(user);
   return (
     <div className={styles.main}>
       <h1>Contact Us</h1>

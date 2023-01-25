@@ -18,14 +18,15 @@ export default function handler(req, res) {
         } else {
           data[key] = req.body
           fs.writeFileSync(configPath, JSON.stringify(data, null, 3))
+          res.status(200).json({ message: "Thanks to contact us", data: data })
         }
       }
 
     } else {
       data[key] = req.body
-      console.log(data);
+   
       fs.writeFileSync(configPath, JSON.stringify(data, null, 3))
-      res.status(200).json({ message: "add successfully", data: data })
+      res.status(200).json({ message: "Thanks to contact us", data: data })
     }
    
   } else {

@@ -8,13 +8,11 @@ const Blog = (props) => {
 
 
   }
-  // console.log(props.allBlogs);
+ 
   const [blogs, setBlogs] = useState(props.allBlogs)
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-
-      <h2>Popular Blogs</h2>
       <div className={styles.blogItem}>
       <InfiniteScroll
       dataLength={blogs.length} //This is important field to render the next data

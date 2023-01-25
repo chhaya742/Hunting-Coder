@@ -8,7 +8,7 @@ const Slug = (props) => {
     return {__html: c};
   }
   const [blog, setblog] = useState(props.myBlog)
-  // console.log("props", props.myBlog);
+
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -22,7 +22,7 @@ const Slug = (props) => {
 
 // export async function getServerSideProps(context) {
 //   const { slug } = context.query
-//   // console.log(slug);
+
 //   const data = await fetch(`http://localhost:3000/api/getblog?slug=${slug}`)
 //   let myProps= await data.json()
 //   return {
