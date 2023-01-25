@@ -6,9 +6,8 @@ import InfiniteScroll from "react-infinite-scroll-component";
 const Blog = (props) => {
   const fetchMoreData = async () => {
 
-
   }
- 
+
   const [blogs, setBlogs] = useState(props.allBlogs)
   return (
     <div className={styles.container}>

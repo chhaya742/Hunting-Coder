@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-
+import Link from 'next/link'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -34,17 +34,18 @@ export default function Home() {
         <div>
           <h2>Popular Blogs</h2>
           <div className={styles.blogItem}>
-            <h3>How to learn javascript in 2022</h3>
+          <Link href={`blog-post/how-to-learn-javascript`}> <h3>How to learn javascript in 2022</h3></Link>
+           
             <p > Javascript the language used to design logic for web</p>
           </div>
 
           <div className={styles.blogItem}>
-            <h3>How to learn javascript in 2022</h3>
+            <h3>How to learn python in 2022</h3>
             <p > Javascript the language used to design logic for web</p>
           </div>
 
           <div className={styles.blogItem}>
-            <h3>How to learn javascript in 2022</h3>
+            <h3>How to learn Nextjs in 2022</h3>
             <p > Javascript the language used to design logic for web</p>
           </div>
         </div>
